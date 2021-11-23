@@ -15,33 +15,76 @@
     <link rel="icon" href="./favicon.ico">
     <title>Robotics Club ISU</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" style="border-width: 0">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img src="assets/img/narrow-logo.png" style="height: 40px">
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" style="color: #D22030"><b>Join Us</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Officers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Gallery</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid" style="margin-top: 50px; padding: 0">
         <div id="title-card" style="position: relative">
-            <div class="container-fluid" style="position: relative;  margin: 0; height: 500px; background-color: rgba(50, 50, 50, .5); z-index: 100; display: inline-block; text-align: center; vertical-align: center">
-                <div style="margin: 30px;">
-                    <img src="assets/img/logo.png" style="height: 80px;">
-                </div>
-                <div style="position:absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">
-                    <h1 style="margin-bottom: 20px; color: white">Robotics Club at Iowa State</h1>
-                    <a href="https://www.stuorg.iastate.edu/auth/login?REDIR=/site/isuroboticsclub/join"><button>Join Us!</button></a>
+            <div class="container-fluid" style="position: relative;  margin: 0; height: 500px; background-color: rgba(50, 50, 50, .7); z-index: 100; display: inline-block; text-align: center; vertical-align: center">
+                <div style="margin: 30px;"></div>
+                <div style="">
+                    <div class="container" style="margin-top: 75px">
+                        <img src="assets/img/logo.png" style="width: 100%; max-width: 300px;">
+                    </div>
+                    <div style="">
+                        <h1 style="color: white">Robotics Club at Iowa State</h1>
+                    </div>
+                    <div>
+                        <button class="social-button" id="facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg>
+                        </button>
+                        <button class="social-button" id="twitter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                            </svg>
+                        </button>
+                        <button class="social-button" id="github">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
-            <div class="center-cropped" style="background-image: url('assets/img/team_before_semester.png'); width: 100%; height: 500px; position: absolute; top: 0; left: 0"></div>
+            <div class="center-cropped" style="background-image: url('assets/img/workspace.jpg'); width: 100%; height: 500px; position: absolute; top: 0; left: 0"></div>
         </div>
-        <div style="position:relative; padding-left: 10%; padding-right: 10%; padding-top: 50px; padding-bottom: 50px;">
-            <h1>Our Projects</h1>
 
+        <div class="container-fluid" style="position:relative; padding-left: 10%; padding-right: 10%; padding-top: 50px; padding-bottom: 50px; background-color: #F8F9FA;">
             <div class="container">
+                <h1>Our Projects</h1>
                 <div class="row" style="margin-top: 50px">
                     <div class="col-sm">
                         <div class="box">
-                            <div class="content" style="background-image: url('assets/img/battlebot.png');"></div>
+                            <div class="content" style="background-image: url('assets/img/hero-shot.jpg');"></div>
                         </div>
                     </div>
                     <div class="col-sm" style="">
@@ -59,7 +102,7 @@
                 <div class="row" style="margin-top: 50px">
                     <div class="col-sm">
                         <div class="box">
-                            <div class="content" style="background-image: url('assets/img/exo.jpg');"></div>
+                            <div class="content" style="background-image: url('assets/img/exo.gif');"></div>
                         </div>
                     </div>
                     <div class="col-sm" style="">
@@ -95,11 +138,13 @@
         </div>
     </div>
 
-    <div style="margin: 0; width: 100%; background-color: #F4B646; display: inline-block; text-align: center; padding: 20px;">
-        <div class="container">
-            <h1>Meet our amazing sponsors</h1>
-            <p>The Robotics Club is always looking for funding. Most goes to building projects, outreach towards our local community and our general club upkeep. We are always grateful to individuals and companies for their continues support.</p>
-            <div class="container" style="max-width: 900px;">
+    <div class="container-fluid" style="background-color: #F4B646">
+        <div class="container" style="background-color: #F4B646;">
+            <div class="container" style="padding: 10px;">
+                <h1 style="">Meet our amazing sponsors</h1>
+            </div>
+            <p style="padding-left: 10px;">The Robotics Club is always looking for funding. Most goes to building projects, outreach towards our local community and our general club upkeep. We are always grateful to individuals and companies for their continues support.</p>
+            <div class="container" style="max-width: 900px; padding: 0 20px 20px;">
                 <div class="row">
                     <div class="col-md">
                         <div class="box2">
@@ -140,31 +185,59 @@
 
     <div style="display: inline-block; text-align: center; width: 100%; padding-top: 80px; padding-bottom: 80px;">
         <h4>Interested in Donating or Talking with the robotics club?</h4>
-        <a href="mailto:isurc@iastate.edu"><button>Contact Us</button></a>
-    </div>
-
-    <div style="background-color: #F4B646; width: 100%; height: 4px;"></div>
-    <div style="display: inline-block; text-align: center; width: 100%; padding-top: 20px; padding-bottom: 20px;">
-        <p><a href="https://twitter.com/isu_robotics">Twitter</a> | <a href="https://www.facebook.com/ISURobotics/">Facebook</a> | <a href="https://github.com/ISURobotics" >GitHub</a></p>
+        <a><button class="site-button">Contact Us</button></a>
     </div>
 </body>
 </html>
 <style>
-    button {
+    .social-button
+    {
         margin: 10px;
-        padding: 20px;
+        background-color: white;
+        width: 50px;
+        height: 50px;
+        padding: 4px;
+        border-radius: 25px;
+        transition-duration: .25s;
+    }
+    #github:hover
+    {
+        transition-duration: .25s;
+        color: #4A0091;
+    }
+    #twitter:hover
+    {
+        color: #1C9CEA;
+        transition-duration: .25s;
+    }
+    #facebook:hover
+    {
+        color: #424999;
+        transition-duration: .25s;
+    }
+
+
+
+    .site-button {
+        transition-duration: .15s;
+        display: inline-block;
+        padding: 0.7em 1.7em;
+        margin: 0 0.3em 0.3em 0;
+        box-sizing: border-box;
+        text-decoration: none;
+        font-family: 'Roboto',sans-serif;
+        font-weight:400;
+        background-color: #F4B646;
         text-align: center;
-        transition: 0.5s;
-        background-size: 300% auto;
-        background-image: linear-gradient(45deg, #f4b646 0%, #c28d28 50%, #f4b646 100%);
-        border-style: solid;
+        position: relative;
+        box-shadow:inset 0 -0.6em 1em -0.35em rgba(0,0,0,0.17),inset 0 0.6em 2em -0.3em rgba(255,255,255,0.15),inset 0 0 0em 0.05em rgba(255,255,255,0.12);
         border-width: 0;
+        border-radius: 4px;
     }
-
-    button:hover {
-        background-position: right center;
+    .site-button:hover {
+        transition-duration: .15s;
+        box-shadow: inset 0 0.6em 2em -0.3em rgba(0,0,0,0.15), inset 0 0 0em 0.05em rgba(255,255,255,0.12);
     }
-
     .col-md
     {
         margin-right: 10px;
@@ -172,7 +245,7 @@
         padding: 5px;
     }
     .center-cropped {
-        background-position: center center;
+        background-position: center top;
         background-size: cover;
     }
     h1
@@ -260,6 +333,7 @@
 
     p
     {
+        font-family: 'Cantarell', sans-serif;
         font-size: 1.2rem;
     }
 </style>
