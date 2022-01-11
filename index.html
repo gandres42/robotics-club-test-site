@@ -152,13 +152,13 @@
         </div>
 
         <!--  sponsors  -->
-        <div class="container-fluid sponsor-grid">
+        <div class="container-fluid sponsors">
             <div class="container-fluid sponsor-title">
                 <h1>Meet our sponsors</h1>
                 <p>The Robotics Club is always looking for funding. Most goes to building projects, outreach towards our local community and our general club upkeep. We are always grateful to individuals and companies for their continues support.</p>
             </div>
 
-            <div class="container-sm">
+            <div class="container sponsor-grid">
                 <div class="row">
                     <div class="col-md">
                         <div class="sponsorbox">
@@ -197,16 +197,44 @@
         </div>
 
         <!--  footer  -->
-        <div class="container-fluid">
-            <div style="display: inline-block; text-align: center; width: 100%; padding-top: 40px; padding-bottom: 40px;">
-                <h4>Interested in joining or donating to the robotics club?</h4>
-                <a href="https://www.stuorg.iastate.edu/auth/login?REDIR=/site/isuroboticsclub/join"><button class="generic_button" style="margin-top: 10px;">Join Us</button></a>
-                <a href="mailto:isurc@iastate.edu"><button class="generic_button" style="margin-top: 10px;">Contact Us</button></a>
+        <div class="container-fluid footer">
+            <div class="container-lg">
+                <div class="row">
+                    <div class="col-sm footer-section">
+                        <p>Interested in donating or talking with us?</p>
+                        <button>Start a conversation</button>
+                    </div>
+                    <div class="col-sm footer-section">
+                        One of three columns
+                    </div>
+                    <div class="col-sm footer-section">
+                        One of three columns
+                    </div>
+                </div>
+            </div>
+            <div class="container-lg footer-copyright">
+                <p>©Robotics Club at Iowa State University™</p>
             </div>
         </div>
+
+
     </body>
 </html>
 <style>
+    .footer {
+        background: rgb(244,182,70);
+        margin-bottom: 0;
+        padding: 0;
+        text-align: left;
+    }
+    .footer-section
+    {
+        text-align: left;
+    }
+    .footer-copyright {
+        text-align: left;
+    }
+
     p {
         font-family: 'Cantarell', sans-serif;
         font-size: 1.2rem;
@@ -228,6 +256,19 @@
     .generic_button:hover {
         transition-duration: .25s;
         background-color: transparent;
+    }
+    .container-fluid
+    {
+        text-align: center;
+    }
+    .content {
+        background-position: center center;
+        background-size: cover;
+        position: absolute;
+        top:      0;
+        left:     0;
+        bottom:   0;
+        right:    0;
     }
 
     .social-button {
@@ -252,28 +293,35 @@
         transition-duration: .25s;
     }
 
-
-
     .project-grid
     {
         max-width: 1400px;
         text-align: center;
-        padding-top: 20px;
+        padding-top: 30px;
+        padding-bottom: 50px;
     }
     .project
     {
-        padding: 10px 5px;
-    }
-    .project-text
-    {
-        background-color: #F4B646;
-        padding: 10px;
+        padding: 5px 7px;
     }
     .project-img
     {
+        overflow: hidden;
         padding: 0;
         margin: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
     }
+    .project-text
+    {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        /*background-color: #F4B646;*/
+        background: rgb(244,182,70);
+        background: linear-gradient(90deg, rgba(244,182,70,1) 0%, rgba(217,158,53,1) 100%);
+        padding: 10px;
+    }
+
     .box {
         position: relative;
         width: 100%; /* desired width */
@@ -284,21 +332,22 @@
         padding-top: 75%; /* initial ratio of 1:1*/
     }
 
+    .sponsors
+    {
+
+    }
     .sponsor-grid
     {
-        background-color: #efefef;
-        text-align: center;
+        max-width: 900px;
     }
     .sponsor-title
     {
         max-width: 1400px;
     }
     .sponsorbox {
-        background-color: white;
+        /*background-color: cadetblue;*/
+        /*border-style: solid;*/
         position: relative;
-        width: 100%;
-        border-radius: 5px;
-        margin: 10px;
     }
     .sponsorbox:before {
         content:     "";
@@ -315,23 +364,14 @@
         bottom:   0;
         right:    0;
         transition-duration: .25s;
-        margin: 5px;
+        margin: 25px;
     }
     .sponsor-image:hover
     {
         transition-duration: .25s;
-        margin: 10px;
+        margin: 30px;
     }
 
-    .content {
-        background-position: center center;
-        background-size: cover;
-        position: absolute;
-        top:      0;
-        left:     0;
-        bottom:   0;
-        right:    0;
-    }
 </style>
 
 <script>
